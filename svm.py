@@ -1,9 +1,9 @@
 #-------------------------------------------------------------------------
 # AUTHOR:Anthony Spencer
-# FILENAME: title of the source file
+# FILENAME: svm.py
 # SPECIFICATION: description of the program
 # FOR: CS 4210- Assignment #3
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 1 hour
 #-----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard vectors and arrays
