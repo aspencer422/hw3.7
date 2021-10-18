@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------
-# AUTHOR: your name
+# AUTHOR:Anthony Spencer
 # FILENAME: title of the source file
 # SPECIFICATION: description of the program
 # FOR: CS 4210- Assignment #3
@@ -51,8 +51,9 @@ for x in c : #iterates over c
                 #make the classifier prediction for each test sample and start computing its accuracy
                 #--> add your Python code here
                 count=0
-                for s in dbTest:
-                    class_predicted = clf.predict([dbTest[s][0:64]])
+                
+                for s in range(len(dbTest)):
+                    class_predicted = clf.predict(dbTest[s][0:64])
                     if class_predicted == dbTest[s][64]:
                         count = count + 1
                 temp_accuracy = count/len(dbTest)
@@ -66,6 +67,8 @@ for x in c : #iterates over c
                     if temp_accuracy > accuracy:
                         accuracy = temp_accuracy
                         print("Highest SVM accuracy so far: "+ str(accuracy) + "Parameters: c" + str(x) + "degree=" + str(y)+" kernel= " +str(z) + "decision_function_shape =" + str(w) )
+
+                counter = counter +1
 
 
 
